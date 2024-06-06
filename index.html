@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contoh Dialog JavaScript</title>
+  <script>
+    function showDialog1() {
+      var result = confirm("Ini adalah dialog konfirmasi pertama. Klik OK untuk melanjutkan.");
+      if (result) {
+        alert("Anda telah mengklik OK pada dialog konfirmasi pertama.");
+      } else {
+        alert("Anda telah mengklik Batal pada dialog konfirmasi pertama.");
+      }
+    }
+
+    function showDialog2() {
+      var name = prompt("Masukkan nama Anda:", "");
+      if (name != null && name != "") {
+        alert("Selamat datang, " + name + "!");
+      } else {
+        alert("Anda tidak memasukkan nama.");
+      }
+    }
+  </script>
+</head>
+<body onload="showDialog1(); showDialog2();">
+  <h1>Contoh Dialog JavaScript</h1>
+  <p>Dua dialog akan muncul saat halaman ini dimuat.</p>
+</body>
+</html>
